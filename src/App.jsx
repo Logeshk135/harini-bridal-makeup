@@ -3,6 +3,7 @@ import img1 from "./images/img1.jpg";
 import img2 from "./images/img2.jpg";
 import img3 from "./images/img3.jpg";
 import img4 from "./images/img4.jpg";
+import profile from "./images/profile.jpg"
 
 export default function BridalPortfolio() {
   const phoneNumber = "tel:+916379144667";
@@ -90,10 +91,9 @@ export default function BridalPortfolio() {
 
       {/* About */}
       <section style={styles.section}>
-        <h1>About Me</h1>
          <div style={styles.aboutContainer}>
-    <img src={img1} alt="Bridal" style={styles.aboutImg} />
-
+    <img src={profile} alt="Bridal" style={styles.aboutImg} />
+<h1>About Me</h1>
     <p style={styles.aboutText}>
       Hi, I’m <b>Harini Priya</b>, a professional bridal makeup artist
       passionate about creating elegant and flawless looks for your special day.
@@ -213,7 +213,8 @@ const styles = {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(190px, 1fr))",
     gap: "10px",
-    padding: "100px"
+    padding: "100px",
+    align:"center"
   },
 
   image: {

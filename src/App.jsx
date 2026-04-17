@@ -91,7 +91,17 @@ export default function BridalPortfolio() {
       {/* About */}
       <section style={styles.section}>
         <h1>About Me</h1>
-        <p>Professional bridal makeup artist for all occasions.</p>
+         <div style={styles.aboutContainer}>
+    <img src={img1} alt="Bridal" style={styles.aboutImg} />
+
+    <p style={styles.aboutText}>
+      Hi, I’m <b>Harini Priya</b>, a professional bridal makeup artist
+      passionate about creating elegant and flawless looks for your special day.
+      I focus on enhancing your natural beauty with personalized 
+      styles that suit your personality and occasion,
+      ensuring you look confident, radiant, and picture-perfect.
+    </p>
+  </div>
       </section>
 
       {/* Gallery */}
@@ -106,9 +116,9 @@ export default function BridalPortfolio() {
 
       {/* Contact */}
       <section id="contact" style={styles.section}>
-        <h1>Contact</h1>
+        <b><h1>Contact</h1></b>
         <p>📞 +91 63791 44667</p>
-        <p>📧 bridalstudio@gmail.com</p>
+        <p>📧 Harinishihtz@gmail.com</p>
       </section>
 
       {/* Footer */}
@@ -127,7 +137,7 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "10px 20px",
+    padding: "15px 20px",
     background: "#ff4d6d",
     color: "white",
   },
@@ -196,25 +206,49 @@ const styles = {
     padding: "40px 15px",
     textAlign: "center",
     background: "#f5f5f5",
+
   },
 
   gallery: {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+    gridTemplateColumns: "repeat(auto-fit, minmax(190px, 1fr))",
     gap: "10px",
+    padding: "100px"
   },
 
   image: {
     width: "100%",
-    height: "200px",
+    height: "250px",
     objectFit: "cover",
     borderRadius: "10px",
   },
 
   footer: {
-    background: "#222",
+    background:"#ff4d6d",
     color: "white",
     padding: "10px",
     textAlign: "center",
   },
+  aboutContainer: {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "30px",
+  flexWrap: "wrap", // important for mobile
+  marginTop: "10px",
+},
+
+aboutImg: {
+  width: "280px",
+  height: "320px",
+  objectFit: "cover",
+  borderRadius: "15px",
+},
+
+aboutText: {
+  maxWidth: "500px",
+  fontSize: "16px",
+  lineHeight: "1.6",
+  textAlign: "left",
+},
 };
